@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>music</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	body
+	{
+		background-color: orange; 
+	}
+	/*span
+	{
+		margin-left: 5px;
+		margin-top: 5px;
+		size: 200%
+		color:white;
+		float: left;
+	}*/
+	.heading
+	{
+		font-family: 'Aguafina Script', cursive;
+		font-size: 900%;
+		text-align: center;
+		color:white;
+		margin-top: 22%;
+
+	}
+	.sub-heading
+	{
+		font-family: 'Aguafina Script', cursive;
+		font-size: 200%;
+		text-align: center;
+		color:white;
+	}
+	.heading1
+	{
+		font-family: 'Aguafina Script', cursive;
+		font-size: 200%;
+		text-align: center;
+		color:white;
+		margin-top:5%;
+		float:left;
+	}
+	.button-style
+	{
+		border-radius: 50%;
+		border:none;
+		text-align: center;
+		font-size: 300%;
+		margin-left: 20%;
+
+	}
+	.btn {
+  background-color: #f4511e;
+  border:none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  font-family: 'Aguafina Script', cursive;
+}
+
+.btn:hover {opacity: 0.6;
+text-decoration: none;
+color:black;}
+
+a{
+	text-decoration: none;
+	color:white;
+}
+.mini
+{
+	font-family: 'Aguafina Script', cursive;
+		font-size: 200%;
+		text-align: center;
+		color:white;
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<div class="container" style="text-align: center;">
+	<button class="btn"><a href="index.html">Home</a></button>
+	<button class="btn"><a href="english.html">English</a></button>
+	<button class="btn"><a href="hindi.html">Hindi</a></button>
+	<button class="btn"><a href="punjabi.html">Punjabi</a></button>
+</div>
+<div class="container">
+	<p class="heading" style="margin-top: 3%">
+		ENGLISH SONGS
+	</p>
+	<p class="mini">(Stop a song before you play the next)</p>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+	<p class="heading1">1. All We Know	<button class="btn" onclick="playSound1('1')">Play</button><button class="btn" onclick="stopSound1('1')">Stop</button>
+	<audio id='1' src="english/all_we_know.mp3"></audio></p></div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-sm-8">
+	<p class="heading1">2. Company	<button class="btn" onclick="playSound2('2')">Play</button><button class="btn" onclick="stopSound2('2')">Stop</button>
+	<audio id='2' src="english/company.mp3"></audio></p></div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-sm-8">
+	<p class="heading1">3. Sugar	<button class="btn" onclick="playSound3('3')">Play</button><button class="btn" onclick="stopSound3('3')">Stop</button>
+	<audio id='3' src="english/sugar.mp3"></audio></p></div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-sm-8">
+	<p class="heading1">4. What Do You Mean	<button class="btn" onclick="playSound4('4')">Play</button><button class="btn" onclick="stopSound4('4')">Stop</button>
+	<audio id='4' src="english/what_do_you_mean.mp3"></audio></p>
+	</div>
+	
+</div>
+
+</body>
+
+
+<script type="text/javascript">
+	function playSound1()
+	{
+		var sound=document.getElementById('1');
+		sound.play();
+	}
+	function stopSound1()
+	{
+		var sound=document.getElementById('1');
+		sound.pause();
+	}
+	function playSound2()
+	{
+		var sound=document.getElementById('2');
+		sound.play();
+	}
+	function stopSound2()
+	{
+		var sound=document.getElementById('2');
+		sound.pause();
+	}
+	function playSound3()
+	{
+		var sound=document.getElementById('3');
+		sound.play();
+	}
+	function stopSound3()
+	{
+		var sound=document.getElementById('3');
+		sound.pause();
+	}
+	function playSound4()
+	{
+		var sound=document.getElementById('4');
+		sound.play();
+	}
+	function stopSound4()
+	{
+		var sound=document.getElementById('4');
+		sound.pause();
+	}
+	
+</script>
+
+
+</html>
